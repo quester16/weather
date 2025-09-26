@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="./src/styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sound-project-ts</title>
+  </head>
+  <body>
+    <div id="wrapper">
+      <div class="container">
+        <h1>Weather sounds</h1>
+        <ul class="weathers_container">
+          <li class="weather_item" data-weather="rainy">
+            <img src="./assets/rainy-bg.jpg" class="img" />
+            <audio src="./assets/sounds/rain.mp3" class="rainy"></audio>
+            <div class="icon">
+              <img src="./assets/icons/cloud-rain.svg" class="img" />
+            </div>
+          </li>
+          <li class="weather_item" data-weather="summer">
+            <img src="./assets/summer-bg.jpg" class="img" />
+            <audio src="./assets/sounds/summer.mp3" class="summer"></audio>
+
+            <div class="icon">
+              <img src="./assets/icons/sun.svg" class="img" />
+            </div>
+          </li>
+          <li class="weather_item" data-weather="winter">
+            <img src="./assets/winter-bg.jpg" class="img" />
+            <audio src="./assets/sounds/winter.mp3" class="winter"></audio>
+
+            <div class="icon">
+              <img src="./assets/icons/cloud-snow.svg" class="img" />
+            </div>
+          </li>
+        </ul>
+        <div class="volume_range">
+          <input type="range" id="slider" />
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="/src/audio.ts"></script>
+  </body>
+</html>
